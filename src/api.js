@@ -11,7 +11,7 @@ const options = {
 };
 
 const url = (urlName) => {
-  return baseUrl + `${urlName}?languege=ko-kr`;
+  return baseUrl + `${urlName}?language=ko-kr`;
 };
 
 export const nowPlaying = () =>
