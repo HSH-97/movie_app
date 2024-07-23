@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet-async";
 
-export const Title = ({ titleName }) => {
+export const Title = ({ title }) => {
   return (
     <Helmet>
-      <title>Movie | {titleName}</title>
+      <title>Movie App | {title}</title>
     </Helmet>
   );
 };

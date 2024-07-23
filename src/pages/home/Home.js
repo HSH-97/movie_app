@@ -4,6 +4,7 @@ import { Loading } from "../../components/Loading";
 import "swiper/css";
 import { Movies } from "./components/Movies";
 import { MainBanner } from "./components/MainBanner";
+import { Title } from "../../components/Title";
 
 export const Home = () => {
   const [nowData, setNowData] = useState();
@@ -44,6 +45,7 @@ export const Home = () => {
         <Loading />
       ) : (
         <>
+          <Title title="HOME" />
           <MainBanner data={nowData[0]} />
           <Movies title="현재 상영 영화" movieData={nowData} />
           <Movies title="인기 영화" movieData={popData} />
